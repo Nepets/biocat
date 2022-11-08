@@ -1,0 +1,18 @@
+body {
+  font-family: 'Monda';
+  font-weight: 500;
+  background-color: #F8F9FA;
+}
+
+.my-footer {
+  background-color: var(--bs-gray-900);
+}
+
+.my-footer p {
+  color: var(--bs-white);
+}
+
+.fas.fa-laptop-medical {
+  color: var(--bs-red);
+}
+

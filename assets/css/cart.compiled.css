@@ -1,0 +1,10 @@
+.cart {
+  border: 5px solid;
+  background-color: var(--bs-gray-300);
+}
+.cart .cart-header {
+  background-color: var(--bs-gray-900);
+}
+.cart .cart-header h2 {
+  color: white;
+}
