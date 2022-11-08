@@ -16,3 +16,12 @@ body {
   color: var(--bs-red);
 }
 
+.my-dropdown {
+  background-color: #f8f9fa;
+  color: var(--bs-gray-900);
+}
+
+.my-button {
+  background-color: var(--bs-red);
+}
+
