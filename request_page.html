@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/card.compiled.css">
     <link rel="stylesheet" href="assets/css/cart.compiled.css">
+    <link rel="stylesheet" href="assets/css/Icon-Centered-Between-Lines.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/partials/footer.compiled.css">
     <link rel="stylesheet" href="assets/css/partials/header.compiled.css">
@@ -62,8 +63,8 @@
                         <td>Eleni</td>
                         <td>Annie</td>
                         <td>11/01/22</td>
-                        <td><button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                        <td><button class="btn btn-primary" type="button" style="background: var(--bs-red);">Fulfill</button></td>
+                        <td><button class="btn" type="button" date-toggle="modal" data-target="summary"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
+                        <td><button class="btn btn-primary" type="button" style="background: var(--bs-red);" data-toggle="modal" data-target="fulfill">Fulfill</button></td>
                     </tr>
                     <tr>
                         <td>Suman</td>
@@ -100,6 +101,49 @@
                 <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
             </ul>
         </nav>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Summary</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <hr style="margin-top: 0px;margin-bottom: 8px;">
+                    <p style="margin-bottom: 8px;">Requestee: Weidong Yang<br>Request Date: 10/25/2022<br>Status: Complete&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Summary List:<br></p>
+                    <ul style="margin-bottom: 0px;">
+                        <li>Plankton-Zooplankton wm Mount: Cross Quantity: 10<br></li>
+                        <li>Fungus - Zygorhynchus moelleri zygotes Mount: Cross&nbsp;<br>Quantity: 10<br></li>
+                    </ul>
+                    <hr style="margin-top: 8px;margin-bottom: 0px;">
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" style="background: var(--bs-black);">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Fulfill Slide Request</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <hr style="margin-top: 0px;margin-bottom: 8px;">
+                    <p style="margin-bottom: 8px;">To: Eleni Anni<br>Subject: Slides are ready for pick up<br></p>
+                    <hr style="margin-top: 8px;margin-bottom: 8px;">
+                    <p style="margin-bottom: 8px;">Request Date: 10/25/2022<br>Summary List:<br></p>
+                    <ul style="margin-bottom: 0px;">
+                        <li>Plankton-Zooplankton wm Mount: Cross Quantity: 10<br></li>
+                        <li>Fungus - Zygorhynchus moelleri zygotes Mount: Cross&nbsp;<br>Quantity: 10<br></li>
+                    </ul>
+                    <hr style="margin-top: 8px;margin-bottom: 8px;"><textarea style="width: 100%;margin-left: 1px;" placeholder="Your Comments go here:"></textarea>
+                    <hr style="margin-top: 8px;margin-bottom: 0px;">
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group" role="group" style="margin: 20px;margin-right: 20px;margin-left: 575px;"><button class="btn btn-primary" type="button" style="background: var(--bs-black);margin-right: 10px;">Cancel</button><button class="btn btn-primary" type="button" style="background: var(--bs-red);">Complete</button></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
