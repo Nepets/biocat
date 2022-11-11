@@ -3,6 +3,9 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    .card:hover{
+        background-color: #52d1ff
+    }
     
     .my-card{
         text-decoration: none;
