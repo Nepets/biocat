@@ -9,69 +9,55 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/card.compiled.css">
-    <link rel="stylesheet" href="assets/css/cart.compiled.css">
-    <link rel="stylesheet" href="assets/css/divider-text-middle.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/partials/footer.compiled.css">
-    <link rel="stylesheet" href="assets/css/partials/header.compiled.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
-                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
-                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
-                    </svg></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2"><span class="text-center me-auto navbar-text" style="margin-left: 962px;">Hello User!</span>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="category_page.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
-                    <li class="nav-item"></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 page-title">
-                <h1 class="text-center" style="/*align-self: center;*/">Categories</h1>
-            </div>
-            <div class="col-md-4"></div>
+<body><div id='page-container'>
+    <div id='content-wrap'>
+        <nav class="navbar navbar-light navbar-expand-md py-3">
+    <div class="container"><a class="navbar-brand d-flex align-items-center" href="admin_homepage.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div id="navcol-2" class="collapse navbar-collapse"><span class="navbar-text">Hello User!</span>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="category_page.html">Search</a></li>
+                <li class="nav-item"><a class="nav-link" href="request_page_user.html">Request</a></li>
+                <li class="nav-item"></li>
+            </ul>
         </div>
     </div>
-    <div class="container mb-5" style="padding-bottom: 0px;margin-bottom: 154px;">
+</nav>
+    <div class="container my-5" style="padding-bottom: 0px;margin-bottom: 154px;">
         <div class="row">
-            <div class="col-md-6 col-xl-8 col-xxl-8 card-side">
-                <div class="card my-card" style="/*border-radius: 10px;*/background: #1E3A72;width: 215px;height: 215px;">
+            <div class="col-md-6 col-xl-8 col-xxl-8">
+                <h1 class="text-center page-title" style="padding: 20px 60px;">Categories</h1>
+                <div class=" card-side mt-4">
+                <a class="card my-card" style="/*border-radius: 10px;*/background: #1E3A72;width: 215px;height: 215px;">
                     <h4 class="text-center mb-0">Prokaryotes</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/background: #ffd34b;width: 215px;height: 215px;">
+                </a>
+                <a class="card my-card" style="/*border-radius: 10px;*/background: #ffd34b;width: 215px;height: 215px;">
                     <h4 class="text-center mb-0">Protist</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/background: #c53434;width: 215px;height: 215px;">
+                </a>
+                <a class="card my-card" style="background: #c53434;">
                     <h4 class="text-center mb-0">Fungi Lichens</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/background: #f8f887;width: 215px;height: 215px;">
+                </a>
+                <a class="card my-card" style="/*border-radius: 10px;*/background: #f8f887;">
                     <h4 class="text-center mb-0">Plants</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/background: #52d1ff;width: 215px;height: 215px;">
-                    <a class="text-center mb-0" style= "color:black; text-decoration: none; font-size: 24px"  href="subcategory_page.html">Invertebrates</a>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/background: #ffb4ff;width: 215px;height: 215px;">
+                </a>
+                <a class="card my-card" style="/*border-radius: 10px;*/background: #52d1ff;" href="subcategory_page.html">
+                    <h4 class="text-center mb-0" style="color:black; text-decoration: none; font-size: 24px" href="subcategory_page.html">Invertebrates</h4>
+                </a>
+                <a class="card my-card" style="/*border-radius: 10px;*/background: #ffb4ff;">
                     <h4 class="text-center mb-0">Vertebrates</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/width: 215px;height: 215px;">
+                </a>
+                <a class="card my-card" style="/*border-radius: 10px;*/">
                     <h4 class="text-center mb-0">Geology</h4>
-                </div>
+                </a>
+            </div>
             </div>
             <div class="col-md-6 col-xl-4 col-xxl-4 offset-xl-5 cart" style="margin-left: -3px;">
                 <div class="cart-header py-2 mt-2">
-                    <h2 class="text-center">My slides</h2>
+                    <h2 class="text-center">Request Cart</h2>
                 </div>
-                <div class="row">
+                <div class="row mt-2 mx-2">
                     <div class="col">
                         <p style="padding-right: 0px;margin-right: 4px;margin-bottom: 22px;">Fungus - Zygorhynchus moelleri zygotes</p>
                         <p style="padding-bottom: 0px;padding-top: 0px;margin-top: -17px;">Mount Type: Cross&nbsp; &nbsp; &nbsp;Quantity: 10<button class="btn btn-primary btn-sm text-center d-table-row float-end align-items-end" type="button" style="background: rgb(33,37,41);">Delete</button></p>
@@ -80,7 +66,7 @@
                 <div style="text-align: center;padding-bottom: 11px;margin-bottom: 24px;margin-top: 84px;margin-left: 0px;">
                     <h2 class="divider-style" style="margin-bottom: -51px;padding-left: 0px;"></h2>
                 </div>
-                <div class="row">
+                <div class="row mt-2 mx-2">
                     <div class="col">
                         <p>Plankton - Zooplankton wm</p>
                         <p style="padding-bottom: 0px;margin-top: -16px;"><button class="btn btn-primary btn-sm text-center d-table-row float-end align-items-end" type="button" style="background: rgb(33,37,41);">Delete</button>Mount Type: Cross&nbsp; &nbsp; Quantity: 10</p>
@@ -97,10 +83,14 @@
             </div>
         </div>
     </div>
-    <footer class="text-center" style="background-color: var(--bs-gray-900);"><div class="container-fluid my-footer py-4">
+    </div>
+    <footer class="text-center my-footer" style="background-color: var(--bs-gray-900);"><div class="container-fluid py-4">
     <p class="mb-0">Copyright © 2022 BioCat</p>
     <p class="mb-0">Temple University</p>
 </div></footer>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

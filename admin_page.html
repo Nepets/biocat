@@ -9,216 +9,229 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/card.compiled.css">
-    <link rel="stylesheet" href="assets/css/cart.compiled.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/partials/footer.compiled.css">
-    <link rel="stylesheet" href="assets/css/partials/header.compiled.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body style="position: relative;">
-    <nav class="navbar navbar-light navbar-expand-md py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2"><span class="navbar-text">Hello, Rob!</span>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Validation Tables</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Import</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 page-title">
-                <h1 class="text-center" style="/*align-self: center;*/">Admin Dashboard</h1>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-6 col-xl-3 card-side">
-                <div class="card my-card" style="/*border-radius: 10px;*/">
-                    <h4 class="text-center mb-0">Total Slides<br>50,234</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/">
-                    <h4 class="text-center mb-0">Fulfilled Request<br>20</h4>
-                </div>
-                <div class="card my-card" style="/*border-radius: 10px;*/">
-                    <h4 class="text-center mb-0">Uncompleted Request<br>4</h4>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-9">
-                <div class="my-2" style="display: flex;flex-wrap: wrap;gap: 30px;">
-                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Dropdown </button>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+    <div id="page-container">
+        <div id="content-wrap">
+            <nav class="navbar navbar-light navbar-expand-md py-3">
+                <div class="container"><a class="navbar-brand d-flex align-items-center" href="category_page.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1"><span class="navbar-text">Hello, Rob!</span>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="admin_page.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="request_page.html">Request</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Validation Tables</a></li>
+                            <li class="nav-item"><a class="nav-link" href="add_page.html">Add&nbsp;</a></li>
+                            <li class="nav-item"><a class="nav-link" href="import_page.html">Import</a></li>
+                        </ul><button class="btn btn-primary my-button" type="button">Logout</button>
                     </div>
-                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Dropdown </button>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 page-title">
+                        <h1 class="text-center" style="/*align-self: center;*/">Admin Dashboard</h1>
                     </div>
-                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Dropdown </button>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </div><button class="btn btn-primary my-button" type="button">Reset</button>
+                    <div class="col-md-4"></div>
                 </div>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Subcategory</th>
-                                <th>Slide Name</th>
-                                <th>Manufacturer</th>
-                                <th>Quantity&nbsp;</th>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td><i class="fas fa-edit"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-6 col-xl-12 card-side mb-5">
+                        <div class="card my-card" style="/*border-radius: 10px;*/">
+                            <h4 class="text-center mb-0">Total Slides<br>50,234</h4>
+                        </div>
+                        <div class="card my-card" style="/*border-radius: 10px;*/">
+                            <h4 class="text-center mb-0">Requests<br></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-12">
+                        <div class="my-2 my-flex" style="gap: 30px;">
+                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Category</button>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            </div>
+                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Subcategory</button>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            </div>
+                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Mount Type</button>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            </div><button class="btn btn-primary my-button" type="button">Reset</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Slide Name</th>
+                                        <th>Category</th>
+                                        <th>Subcategory</th>
+                                        <th>Mount Type</th>
+                                        <th>Manufacturer</th>
+                                        <th>M. Code</th>
+                                        <th>Quantity&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="/*padding-right: 0;*/">Super long name to see what happens</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                        <td>Cell 5</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="my-flex mt-2">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <nav style="margin-left: 300px;margin-right: 300px;">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
-    </div>
-    <footer class="text-center" style="background-color: var(--bs-gray-900);"><div class="container-fluid my-footer py-4">
+        <footer class="text-center my-footer"><div class="container-fluid py-4">
     <p class="mb-0">Copyright © 2022 BioCat</p>
     <p class="mb-0">Temple University</p>
 </div></footer>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
