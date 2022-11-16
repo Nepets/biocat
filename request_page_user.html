@@ -4,12 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>BioCat</title>
+    <title>BioCat-Updated</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/card.compiled.css">
+    <link rel="stylesheet" href="assets/css/cart.compiled.css">
+    <link rel="stylesheet" href="assets/css/components/dropdown.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/partials/footer.css">
+    <link rel="stylesheet" href="assets/css/partials/main-nav.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/validation-tables.css">
 </head>
 
 <body>
@@ -17,10 +26,10 @@
         <div id="page-wrap">
             <nav class="navbar navbar-light navbar-expand-md py-3">
                 <div class="container"><a class="navbar-brand d-flex align-items-center" href="admin_page.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-2"><span class="navbar-text">Hello User!</span>
+                    <div class="collapse navbar-collapse" id="navcol-2"><span class="navbar-text">Hello Eleni!</span>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="category_page.html">Search</a></li>
-                            <li class="nav-item"><a class="nav-link" href="request_page_user.html">Request</a></li>
+                            <li class="nav-item"><a class="nav-link" href="request_page_user.html"><span style="color: var(--bs-nav-link-hover-color);">Request History</span><br></a></li>
                             <li class="nav-item"></li>
                         </ul>
                     </div>
@@ -35,8 +44,8 @@
                     <div class="col-md-4"></div>
                 </div>
             </div>
-            <div class="container my-container">
-                <div class="table-responsive text-bg-light" style="padding-bottom: 0px;margin-bottom: 0px;margin-top: 0px;">
+            <div class="container">
+                <div class="table-responsive text-bg-light custom-table">
                     <table class="table">
                         <thead>
                             <tr>
@@ -52,34 +61,34 @@
                                 <td>Eleni</td>
                                 <td>Annie</td>
                                 <td>11/01/22</td>
-                                <td><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#summary"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td>Complete</td>
+                                <td><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="summary"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="#fulfill" style="background-color: var(--bs-btn-hover-bg);">In Progress</button></td>
                             </tr>
                             <tr>
                                 <td>Suman</td>
                                 <td>Batish</td>
                                 <td>11/02/22</td>
                                 <td> <button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td>In Progress</td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="#fulfill" style="/*background-color: var(--bs-btn-hover-bg);*/">Completed</button></td>
                             </tr>
                             <tr>
                                 <td>Eleni</td>
                                 <td>Annie</td>
                                 <td>11/03/22</td>
                                 <td><button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td>In Progress</td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="#fulfill" style="/*background-color: var(--bs-btn-hover-bg);*/">Completed</button></td>
                             </tr>
                             <tr>
                                 <td>Suman</td>
                                 <td>Batish</td>
                                 <td>11/04/22</td>
                                 <td><button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td>Complete</td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="#fulfill" style="/*background-color: var(--bs-btn-hover-bg);*/">Completed</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <nav class="d-flex m-auto" style="width: 240px;">
+                <nav class="d-flex m-auto mt-2" style="width: 240px;">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -91,7 +100,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="modal fade" role="dialog" tabindex="-1" id="summary">
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -106,7 +115,7 @@
                             </ul>
                             <hr style="margin-top: 8px;margin-bottom: 0px;">
                         </div>
-                        <div class="modal-footer"><button class="btn btn-primary close-button" type="button" data-bs-dismiss="modal">Close</button></div>
+                        <div class="modal-footer"><button class="btn btn-primary" type="button" style="background: var(--bs-black);" data-dimiss="modal">Close</button></div>
                     </div>
                 </div>
             </div>
@@ -118,6 +127,8 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="assets/js/request_completed.js"></script>
 </body>
 
 </html>

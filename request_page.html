@@ -4,17 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>BioCat</title>
+    <title>BioCat-Updated</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/card.compiled.css">
+    <link rel="stylesheet" href="assets/css/cart.compiled.css">
+    <link rel="stylesheet" href="assets/css/components/dropdown.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/partials/footer.css">
+    <link rel="stylesheet" href="assets/css/partials/main-nav.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/validation-tables.css">
 </head>
 
 <body>
     <div id="page-container">
-        <div id="page-wrap">
+        <div id="content-wrap">
             <nav class="navbar navbar-light navbar-expand-md py-3">
                 <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1"><span class="navbar-text">Hello, Rob!</span>
@@ -37,16 +46,16 @@
                     <div class="col-md-4"></div>
                 </div>
             </div>
-            <div class="container my-container">
+            <div class="container">
                 <div class="table-responsive text-bg-light" style="padding-bottom: 0px;margin-bottom: 0px;margin-top: 0px;">
-                    <table class="table">
+                    <table class="table custom-table">
                         <thead>
                             <tr>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Request Date</th>
                                 <th>Summary</th>
-                                <th></th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -54,34 +63,76 @@
                                 <td>Eleni</td>
                                 <td>Annie</td>
                                 <td>11/01/22</td>
-                                <td><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#summary"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td><button class="btn btn-primary my-button" type="button" data-bs-toggle="modal" data-bs-target="#fulfill">Fulfill</button></td>
+                                <td><button class="btn" type="button" date-bs-toggle="modal" data-bs-target="#summary"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="#fulfill" style="background-color: var(--bs-btn-hover-bg);">In Progress</button></td>
                             </tr>
                             <tr>
                                 <td>Suman</td>
                                 <td>Batish</td>
                                 <td>11/02/22</td>
                                 <td> <button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td><button class="btn btn-secondary" type="button">Completed</button></td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="fulfill">Complete</button></td>
                             </tr>
                             <tr>
                                 <td>Eleni</td>
                                 <td>Annie</td>
                                 <td>11/03/22</td>
                                 <td><button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td><button class="btn btn-primary" type="button">Fulfill</button></td>
+                                <td><button class="btn btn-primary table-button" type="button" style="background-color: var(--bs-btn-hover-bg);">In Progress</button></td>
                             </tr>
                             <tr>
                                 <td>Suman</td>
                                 <td>Batish</td>
                                 <td>11/04/22</td>
                                 <td><button class="btn" type="button"><i class="far fa-edit" style="font-size: 24px;"></i></button></td>
-                                <td><button class="btn btn-secondary" type="button">Completed</button></td>
+                                <td><button class="btn btn-primary table-button" type="button" data-bs-toggle="modal" data-bs-target="fulfill">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <nav class="d-flex m-auto" style="width: 240px;">
+                <nav class="d-flex m-auto mt-5" style="width: 240px;">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -137,13 +188,15 @@
                 </div>
             </div>
         </div>
-        <footer class="text-center" style="background-color: var(--bs-gray-900);"><div class="container-fluid my-footer py-4" style="position: absolute;bottom: 0;/*right: 0;*//*left: 0;*//*right: 50px;*/">
+        <footer class="text-center" id="footer" style="background-color: var(--bs-gray-900);"><div class="container-fluid py-4">
     <p class="mb-0">Copyright © 2022 BioCat</p>
     <p class="mb-0">Temple University</p>
 </div></footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="assets/js/request_completed.js"></script>
 </body>
 
 </html>

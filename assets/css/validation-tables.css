@@ -1,0 +1,21 @@
+.validation-table {
+  border: solid 1px var(--bs-gray-900);
+  width: 500px;
+  /*height: 400px;*/
+  margin-bottom: 25px;
+}
+
+.validation-table h4 {
+  background-color: var(--bs-gray-900);
+  color: white;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.validation-table .btn-primary {
+  background-color: var(--bs-green);
+  width: 100px;
+  float: right;
+}
+
