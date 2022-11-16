@@ -4,12 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>BioCat</title>
+    <title>BioCat-Updated</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/card.compiled.css">
+    <link rel="stylesheet" href="assets/css/cart.compiled.css">
+    <link rel="stylesheet" href="assets/css/components/dropdown.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/partials/footer.css">
+    <link rel="stylesheet" href="assets/css/partials/main-nav.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/validation-tables.css">
 </head>
 
 <body style="position: relative;">
@@ -21,7 +30,7 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="admin_page.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="request_page.html">Request</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Validation Tables</a></li>
+                            <li class="nav-item"><a class="nav-link" href="validation_page.html">Validation Tables</a></li>
                             <li class="nav-item"><a class="nav-link" href="add_page.html">Add&nbsp;</a></li>
                             <li class="nav-item"><a class="nav-link" href="import_page.html">Import</a></li>
                         </ul><button class="btn btn-primary my-button" type="button">Logout</button>
@@ -30,23 +39,23 @@
             </nav>
             <div class="container">
                 <div class="row my-5">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 page-title">
-                        <h1 class="text-center" style="/*align-self: center;*/">Admin Dashboard</h1>
+                    <div class="col-md-4">
+                        <div class="card admin-card float-end" style="/*border-radius: 10px;*/">
+                            <h6 class="text-center mb-0">Total Slides<br>50,234</h6>
+                        </div>
                     </div>
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4 page-title">
+                        <h2 class="text-center" style="/*align-self: center;*/">Admin Dashboard</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card admin-card" style="/*border-radius: 10px;*/">
+                            <h6 class="text-center mb-0">Request Completed 10/30</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container my-5">
                 <div class="row">
-                    <div class="col-md-6 col-xl-12 card-side mb-5">
-                        <div class="card my-card" style="/*border-radius: 10px;*/">
-                            <h4 class="text-center mb-0">Total Slides<br>50,234</h4>
-                        </div>
-                        <div class="card my-card" style="/*border-radius: 10px;*/">
-                            <h4 class="text-center mb-0">Requests<br></h4>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-xl-12">
                         <div class="my-2 my-flex" style="gap: 30px;">
                             <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Category</button>
@@ -57,10 +66,10 @@
                             </div>
                             <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button">Mount Type</button>
                                 <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                            </div><button class="btn btn-primary my-button" type="button">Reset</button>
+                            </div><button class="btn btn-primary" type="button" style="background-color: var(--bs-green);">Search</button><button class="btn btn-primary my-button" type="button">Reset</button>
                         </div>
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table custom-table">
                                 <thead>
                                     <tr>
                                         <th>Slide Name</th>
@@ -74,144 +83,144 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="/*padding-right: 0;*/">Super long name to see what happens</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td>12</td>
+                                        <td style="/*padding-right: 0;*/">Chaetopetrus trochophores</td>
+                                        <td>Invertebrates</td>
+                                        <td>Annelida</td>
+                                        <td>whole mount&nbsp;</td>
+                                        <td>General Biological Supply House&nbsp;</td>
+                                        <td>[Turtox] E 8.35</td>
+                                        <td>29</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Earthworm anterior end near median sagittal section</td>
+                                        <td>Invertebrates</td>
+                                        <td>Annelida</td>
+                                        <td>long section</td>
+                                        <td>Triarch Inc</td>
+                                        <td>ZH 1-141</td>
+                                        <td>60</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Earthworm Is anterior end&nbsp;</td>
+                                        <td>Invertebrates<br><br></td>
+                                        <td>Annelida<br><br></td>
+                                        <td>long section&nbsp;</td>
+                                        <td>General Biological Supply House&nbsp;</td>
+                                        <td>Turtox Z 8.45</td>
+                                        <td>5</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Earthworm anterior end near median sagittal section<br><br></td>
+                                        <td>Invertebrates<br><br></td>
+                                        <td>Annelida<br><br><br></td>
+                                        <td>long section<br><br></td>
+                                        <td>Triarch Inc<br><br><br></td>
+                                        <td>ZH 1-141<br><br></td>
+                                        <td><br>60<br><br></td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Earthworm anterior end sagittal section&nbsp;</td>
+                                        <td>Invertebrates</td>
+                                        <td>Annelida</td>
+                                        <td>long section&nbsp;</td>
+                                        <td>Carolina Biological Supply Company&nbsp;</td>
+                                        <td>Z 1265</td>
+                                        <td>11</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Acorus calamus rhizome xs</td>
+                                        <td>Plants</td>
+                                        <td>Angiospermae</td>
+                                        <td>cross section</td>
+                                        <td>Triarch inc</td>
+                                        <td>12-1</td>
+                                        <td>18</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Acorus calamus root xs</td>
+                                        <td>Plants</td>
+                                        <td>Angiospermae</td>
+                                        <td>cross section</td>
+                                        <td>Triarch Inc</td>
+                                        <td>14-1</td>
+                                        <td>31</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Acorus / sweet flag rhizome cs&nbsp;</td>
+                                        <td>Plants</td>
+                                        <td>Angiospermae</td>
+                                        <td>cross section</td>
+                                        <td>Carolina Biological Supply Company&nbsp;</td>
+                                        <td>B 559A / 30-3362</td>
+                                        <td>10</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Allium cepa (onion) section of root-tip showing mitosis</td>
+                                        <td>Plants&nbsp;</td>
+                                        <td>Angiospermae</td>
+                                        <td>section</td>
+                                        <td>New York Scientific Supply Company</td>
+                                        <td>N/A</td>
+                                        <td>2</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Malaria in testes&nbsp;</td>
+                                        <td>Protists</td>
+                                        <td>Malaria</td>
+                                        <td>section</td>
+                                        <td>General Biological Supply House&nbsp;</td>
+                                        <td>P 3</td>
+                                        <td>16</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Oocysts mosquito stomach</td>
+                                        <td>Protists</td>
+                                        <td>Malaria</td>
+                                        <td>section</td>
+                                        <td>Army Medical School</td>
+                                        <td>N/A</td>
+                                        <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Amphiuma small intestine xs&nbsp;</td>
+                                        <td>Vertebrates</td>
+                                        <td>Amphibian</td>
+                                        <td>cross section</td>
+                                        <td>General Biological Supply House</td>
+                                        <td>[Turtox] Z 14.31</td>
+                                        <td>9</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Aspergillus conidiophores 1.5 um sec&nbsp;<br><br></td>
+                                        <td>Fungi&nbsp;</td>
+                                        <td>Fungi&nbsp;</td>
+                                        <td>thin section&nbsp;</td>
+                                        <td>Carolina Biological Supply Company&nbsp;</td>
+                                        <td>97-4420 / 29-7878</td>
+                                        <td>20</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Sphenophyllum plurifoliatum Halifax hard coal lower Yorkian Yorks Yorkshire England&nbsp;</td>
+                                        <td>Geology</td>
+                                        <td>Geology</td>
+                                        <td>cross section</td>
+                                        <td>Unknown</td>
+                                        <td>N/A</td>
+                                        <td>2</td>
                                     </tr>
                                     <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td>Cell 5</td>
-                                        <td>Cell 5</td>
-                                        <td></td>
+                                        <td>Bacteria cocci bacilli &amp; spirillae separate smears</td>
+                                        <td>Prokaryotes</td>
+                                        <td>Prokaryotes</td>
+                                        <td>smear</td>
+                                        <td>Triarch Inc</td>
+                                        <td>4-102 sp</td>
+                                        <td>11</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="my-flex mt-2">
+                        <div class="my-flex mt-5">
                             <nav>
                                 <ul class="pagination">
                                     <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
@@ -227,13 +236,15 @@
                 </div>
             </div>
         </div>
-        <footer class="text-center my-footer"><div class="container-fluid py-4">
+        <footer class="text-center" id="footer"><div class="container-fluid py-4">
     <p class="mb-0">Copyright © 2022 BioCat</p>
     <p class="mb-0">Temple University</p>
 </div></footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="assets/js/request_completed.js"></script>
 </body>
 
 </html>
