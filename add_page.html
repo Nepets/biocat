@@ -4,128 +4,101 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>BioCat 1</title>
+    <title>BioCat-Updated (1)</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/card.compiled.css">
     <link rel="stylesheet" href="assets/css/cart.compiled.css">
+    <link rel="stylesheet" href="assets/css/components/dropdown.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/partials/footer.compiled.css">
-    <link rel="stylesheet" href="assets/css/partials/header.compiled.css">
+    <link rel="stylesheet" href="assets/css/partials/footer.css">
+    <link rel="stylesheet" href="assets/css/partials/main-nav.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/validation-tables.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1"><span class="navbar-text">Hello, Rob!</span>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Validation Tables</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Import</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 page-title">
-                <h1 class="text-center" style="/*align-self: center;*/">Add New Slide</h1>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-        <div id="addSlideDiv" style="border-style: none;"></div>
-    </div>
-    <div class="container addSlideContainers" style="border-style: solid;">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="slidesHeading" style="font-size: 25px;"><span class="slidesHeading" style="color: var(--bs-red);">*</span>Slide Name</h1>
-            </div>
-            <div class="col-md-12"><input type="text" class="addSlideInputs" placeholder="Enter Slide Name Here"></div>
-            <div class="col-md-12">
-                <h1 class="slidesHeading" style="font-size: 25px;"><span class="spanSlideHeadings" style="color: var(--bs-red);">*</span>Category&nbsp;</h1>
-            </div>
-            <div class="col-md-12">
-                <div class="dropdown"><button class="btn btn-primary dropdown-toggle addSlideDropdowns" aria-expanded="false" data-bs-toggle="dropdown" type="button">Select Category</button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+    <div id="page-container">
+        <div id="content-wrap">
+            <nav class="navbar navbar-light navbar-expand-md py-3">
+                <div class="container"><a class="navbar-brand d-flex align-items-center" href="category_page.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-laptop-medical"></i></span><span>BioCat</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1"><span class="navbar-text">Hello, Rob!</span>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="admin_page.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="request_page.html">Request</a></li>
+                            <li class="nav-item"><a class="nav-link" href="validation_page.html">Validation Tables</a></li>
+                            <li class="nav-item"><a class="nav-link" href="add_page.html">Add Slides</a></li>
+                            <li class="nav-item"><a class="nav-link" href="import_page.html">Import</a></li>
+                        </ul><button class="btn btn-primary my-button" type="button">Logout</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-12">
-                <h1 class="slidesHeading" style="font-size: 25px;"><span class="spanSlideHeadings" style="color: var(--bs-red);">*</span>Manufacturer</h1>
-            </div>
-            <div class="col-md-12">
-                <div class="dropdown"><button class="btn btn-primary dropdown-toggle addSlideDropdowns" aria-expanded="false" data-bs-toggle="dropdown" type="button">Select Manafacturer</button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+            </nav>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 page-title">
+                        <h1 class="text-center" style="/*align-self: center;*/">Add New Slide</h1>
+                    </div>
+                    <div class="col-md-4"></div>
                 </div>
+                <div id="addSlideDiv" style="border-style: none;"></div>
             </div>
-            <div class="col-md-12">
-                <h1 class="slidesHeading"><span class="spanSlideHeadings" style="color: var(--bs-red);">*</span>Quantity</h1>
-            </div>
-            <div class="col-md-12"><input type="text" class="addSlideInputs" placeholder=""></div>
-        </div>
-    </div>
-    <div class="container addSlideContainers" style="border-style: solid;">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="slidesHeading"><span class="spanSlideHeadings">*</span>Unique Slide Identifier</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12"><input type="text" class="addSlideInputs" placeholder="Enter Slide Name Here"></div>
-        </div>
-    </div>
-    <div class="container addSlideContainers" style="border-style: solid;">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="slidesHeading"><span class="spanSlideHeadings">*</span>Subcategory</h1>
-                <div class="dropdown"><button class="btn btn-primary dropdown-toggle addSlideDropdowns" aria-expanded="false" data-bs-toggle="dropdown" type="button">Select Subcategory</button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+            <div class="container my-container py-2">
+                <div class="row">
+                    <div class="col-md-12 col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Slide Name</h4><input type="text" class="addSlideInputs" placeholder="Enter Slide Name Here" style="width: 100%;/*border: none;*/">
+                    </div>
+                    <div class="col-md-12 col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Unique Slide Identifier</h4><input type="text" class="addSlideInputs" placeholder="Enter Slide Name Here" style="width: 100%;">
+                    </div>
+                    <div class="col-md-12 col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Category&nbsp;</h4>
+                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="width: 100%;">Select Category</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Subcategory</h4><div class="dropdown"><button class="btn dropdown-toggle  my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button" disable="true" style='width:100%;'>Select Subcategory</button>
+    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+</div>
+                    </div>
+                    <div class="col-md-12 col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Manufacturer</h4>
+                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="width: 100%;">Select Manafacturer</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Mount Type</h4>
+                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle my-dropdown" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="width: 100%;">Select Mount Type</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6 my-2">
+                        <h4 class="slidesHeading">*Quantity</h4><input type="text" class="addSlideInputs" placeholder="Enter Slide Quantity" style="width: 100%;">
+                    </div>
+                    <div class="col-xl-6 my-2">
+                        <h4 class="slidesHeading"><span class="spanSlideHeadings"></span>Image</h4><input type="file" id="addSlideImg-1">
+                    </div>
+                    <div class="col">
+                        <div class="btn-group float-end mb-2 mx-3" role="group"><button class="btn btn-primary mx-2 close-button" type="button" style="background-color: var(--bs-gray-900);">Cancel</button><button class="btn btn-primary my-button" type="button">Add</button></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="slidesHeading"><span class="spanSlideHeadings">*</span>Mount Type</h1>
-            </div>
-        </div>
+        <footer class="text-center" id="footer"><div class="container-fluid py-4">
+    <p class="mb-0">Copyright © 2022 BioCat</p>
+    <p class="mb-0">Temple University</p>
+</div></footer>
     </div>
-    <div class="container addSlideContainers" style="border-style: solid;">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="dropdown"><button class="btn btn-primary dropdown-toggle addSlideDropdowns" aria-expanded="false" data-bs-toggle="dropdown" type="button">Select Mount Type</button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="slidesHeading"><span class="spanSlideHeadings">*</span>Image</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container addSlideContainers" style="border-style: solid;">
-        <div class="row">
-            <div class="col-md-12"><input type="file" id="addSlideImg"></div>
-        </div>
-    </div>
-    <div class="container" style="border-style: none;">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="text-center"><button class="btn btn-primary" id="addSlideCancelBtn" type="button" style="background: var(--bs-black);">Cancel</button><button class="btn btn-primary" id="addSlideuploadBtn" type="button" style="background: var(--bs-red);">Upload</button></div>
-            </div>
-        </div>
-    </div>
-    <footer id="addSlideFooter" class="&quot;footer-copyright text-center py-3">
-        <p style="color: var(--bs-white);" class="pb-md-0 mx-md-0 my-md-0">Copyright@2022<br><br>Temple University Biology Department<br><br></p>
-    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="assets/js/request_completed.js"></script>
 </body>
 
 </html>
