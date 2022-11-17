@@ -2,26 +2,49 @@ body {
   font-family: 'Monda';
   font-weight: 500;
   background-color: #F8F9FA;
+  position: relative;
 }
 
-.my-footer {
-  background-color: var(--bs-gray-900);
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-.my-footer p {
-  color: var(--bs-white);
+#content-wrap {
+  padding-bottom: 6rem;
+}
+
+.my-container {
+  width: 75%;
+  border-style: solid;
+}
+
+.my-flex {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+textarea {
+  width: 100%;
 }
 
 .fas.fa-laptop-medical {
   color: var(--bs-red);
 }
 
-.my-dropdown {
-  background-color: #f8f9fa;
-  color: var(--bs-gray-900);
-}
-
-.my-button {
-  background-color: var(--bs-red);
+.page-title {
+  background-color: var(--bs-gray-900);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
 }
 
